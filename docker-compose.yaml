@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  password-validator:
+    build: .
+    image: password-validator:latest
+    container_name: cracklib-validator
+    command: ["--help"]
+    # Utilisé pour le validateur Java
